@@ -16,8 +16,8 @@ string[] array = { "one", "2", ":-)", "three", "3", "four", "4", "six", "6" };
 Console.WriteLine($"Начальный массив:");
 Console.WriteLine($"[{String.Join(", ", array)}]");// string.join - выводит массив через знак в " "
 Console.WriteLine($"Массив, из строк, длина которых меньше или равна 3 символам:");
-string[] array1 = GetNewStringArrayOfLess(array, 3);
-Console.WriteLine($"[{String.Join(", ", array1)}]");// string.join - выводит массив через знак в " "
+string[] arrayOfThree = GetNewStringArrayOfLess(array, 3);
+Console.WriteLine($"[{String.Join(", ", arrayOfThree)}]");// string.join - выводит массив через знак в " "
 Console.WriteLine();
 //---methods---
 string[] GetNewStringArrayOfLess(string[] array, int k)

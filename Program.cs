@@ -2,8 +2,7 @@
 // которая из имеющегося массива строк
 // формирует новый массив из строк, длина которых меньше,
 // либо равна 3 символам. 
-// Первоначальный массив можно ввести с клавиатуры, 
-// либо задать на старте выполнения алгоритма. 
+// Первоначальный массив задаy на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 
@@ -14,10 +13,10 @@
 Console.Clear();
 string[] array = { "one", "2", ":-)", "three", "3", "four", "4", "six", "6" };
 Console.WriteLine($"Начальный массив:");
-Console.WriteLine($"[{String.Join(", ", array)}]");// string.join - выводит массив через знак в " "
+Console.WriteLine($"[{String.Join(", ", array)}]");
 Console.WriteLine($"Массив, из строк, длина которых меньше или равна 3 символам:");
 string[] arrayOfThree = GetNewStringArrayOfLess(array, 3);
-Console.WriteLine($"[{String.Join(", ", arrayOfThree)}]");// string.join - выводит массив через знак в " "
+Console.WriteLine($"[{String.Join(", ", arrayOfThree)}]");
 Console.WriteLine();
 //---methods---
 string[] GetNewStringArrayOfLess(string[] array, int k)
